@@ -25,3 +25,4 @@ dist-ssr
 
 .direnv
 elm-stuff
+.env

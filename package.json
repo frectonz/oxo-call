@@ -20,7 +20,9 @@
     "vite-plugin-elm": "^3.0.1"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.22.0",
     "@tailwindcss/vite": "^4.0.9",
+    "arktype": "^2.1.0",
     "canvas-confetti": "^1.9.3",
     "tailwindcss": "^4.0.9"
   }

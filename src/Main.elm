@@ -30,6 +30,9 @@ main =
 port launchConfetti : () -> Cmd msg
 
 
+port receiveMove : (Int -> msg) -> Sub msg
+
+
 
 -- MODEL
 
@@ -303,7 +306,7 @@ collectValues values list =
 
 subscriptions : Model -> Sub Msg
 subscriptions _ =
-    Sub.none
+    receiveMove Mark
 
 
 

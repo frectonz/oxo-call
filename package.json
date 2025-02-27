@@ -1,0 +1,27 @@
+{
+  "name": "oxo-call",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "elm-format src --yes && prettier src vite.config.ts -w"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/elm": "^0.19.3",
+    "elm": "0.19.1-6",
+    "elm-format": "^0.8.7",
+    "prettier": "^3.5.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0",
+    "vite-plugin-elm": "^3.0.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "canvas-confetti": "^1.9.3",
+    "tailwindcss": "^4.0.9"
+  }
+}

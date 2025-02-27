@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-violet-600 h-screen w-screen grid place-items-center;
+}
+
+.container {
+  @apply w-[90vw] p-4 sm:w-[500px] flex flex-col justify-center items-center gap-8;
+}
+
+.header {
+  @apply w-full mx-auto flex justify-center items-center;
+}
+
+.board {
+  @apply grid gap-4 grid-cols-3 grid-rows-3 place-items-center;
+}
+
+.cell {
+  @apply border-2 border-violet-500 active:scale-75;
+  transition: transform 0.1s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cell > svg {
+  @apply w-full h-full;
+}
+
+.reset {
+  @apply w-20 cursor-pointer active:scale-75 border-2 border-violet-500 shadow-2xl p-2;
+  transition: transform 0.1s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.reset > svg {
+  @apply w-full h-full;
+}

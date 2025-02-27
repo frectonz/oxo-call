@@ -43,7 +43,7 @@ const keys: Record<Move, number> = {
   BOTTOM_RIGHT: 8,
 };
 
-async function parseMove(transcript: string) {
+export async function parseMove(transcript: string) {
   const result = await model.generateContent(
     `Parse out the tic tac toe move the following text implies return a null if you can't find a move: ${transcript}`,
   );
